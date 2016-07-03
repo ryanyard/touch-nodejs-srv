@@ -1,5 +1,6 @@
 { "name" : "nodejs-touch-srv"
 , "install" : "dgram"
 , "install" : "mocha"
+, "install" : "chai"
 , "scripts" : { "test" : "mocha"
 , "start" : "node app.js" } }
