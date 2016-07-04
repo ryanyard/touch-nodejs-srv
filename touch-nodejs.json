@@ -1,0 +1,27 @@
+{
+  "id": "/touch-nodejs",
+  "cmd": null,
+  "cpus": 1,
+  "mem": 128,
+  "disk": 0,
+  "instances": 3,
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "ryanyard/touch-nodejs-srv",
+      "network": "HOST",
+      "privileged": false,
+      "parameters": [],
+      "forcePullImage": false
+    }
+  },
+  "portDefinitions": [
+    {
+      "port": 10001,
+      "protocol": "udp",
+      "name": "7400",
+      "labels": {}
+    }
+  ]
+}
